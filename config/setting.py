@@ -7,27 +7,28 @@ MILVUS_DB_CONFIG = {
     "db_name": "default",
 }
 
-# TORTOISE连接pgsql配置
-TORTOISE_ORM_PGSQL = {
+TORTOISE_ORM = {
     "connections": {
         "default": {
-            "engine": "tortoise.backends.asyncpg",
+            "engine": "tortoise.backends.mysql",
             'credentials': {
-                'database': 'odoo',
-                'host': '10.3.74.219',  # david的本地地址
-                'password': 'root',
-                'port': '5432',
+                "host": "127.0.0.1",
+                'port': '3306',
                 'user': 'root',
+                'password': 'Zld19981016..',
+                'database': 'test',
+                'echo': True
             }
         }
     },
     'apps': {
         'models': {
-            "models": ["models.pgsql_model"]
+            "models": ["models.model"]
         }
     },
     'timezone': 'Asia/Shanghai'
 }
+
 
 # 临时文件存储路径
 FILE_CONFIG = {

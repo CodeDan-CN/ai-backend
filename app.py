@@ -2,7 +2,7 @@ import os
 import uvicorn
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
-from config.setting import TORTOISE_ORM_PGSQL
+from config.setting import TORTOISE_ORM
 from exception.all_exception import global_exception_handlers
 from utils.logger_factory import logger
 from tortoise.contrib.fastapi import register_tortoise
@@ -37,16 +37,13 @@ def create_app():
     # 添加路由
     # _app.include_router(router=embedding, prefix="/v1/embedding", tags=["embedding"])
 
-    # pgsql_db_config = TORTOISE_ORM_PGSQL['connections']['default']['credentials']
-
-    # 注册PostgreSQL数据源
-    # register_tortoise(
-    #     _app,
-    #     db_url=f"asyncpg://{pgsql_db_config['user']}:{pgsql_db_config['password']}@{pgsql_db_config['host']}:{pgsql_db_config['port']}/{pgsql_db_config['database']}",
-    #     modules={'models': ['models.pgsql_model']},
-    #     # generate_schemas=True,
-    #     add_exception_handlers=True,
-    # )
+    # 配置数据库
+    register_tortoise(
+        app=_app,
+        config=TORTOISE_ORM,
+        # generate_schemas =True, 没有表自动生成，生产不开
+        add_exception_handlers=True  # 数据库日志，同样生产不开
+    )
 
     return _app
 

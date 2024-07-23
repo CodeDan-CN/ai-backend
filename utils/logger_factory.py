@@ -2,7 +2,6 @@ import logging
 import os
 import re
 from logging.handlers import TimedRotatingFileHandler
-
 from config.setting import LOG_CONFIG
 
 
@@ -57,7 +56,9 @@ class LoggerSingleton:
     def get_logger(self):
         return self.logger
 
+
 def get_logger(name):
     return LoggerSingleton(name).get_logger()
 
-logger = get_logger('digital_portrait')
+
+logger = get_logger('ai-backend')

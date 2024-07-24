@@ -16,7 +16,7 @@ TORTOISE_ORM = {
                 'port': '3306',
                 'user': 'root',
                 'password': 'Zld19981016..',
-                'database': 'test',
+                'database': 'ai-backend',
                 'echo': True
             }
         }

@@ -7,6 +7,8 @@ from exception.all_exception import global_exception_handlers
 from utils.logger_factory import logger
 from tortoise.contrib.fastapi import register_tortoise
 
+from web.file_group_manage_web import group
+
 
 def create_app():
     _app = FastAPI(
@@ -35,7 +37,7 @@ def create_app():
         logger.info("fastAPI ------------------ ending")
 
     # 添加路由
-    # _app.include_router(router=embedding, prefix="/v1/embedding", tags=["embedding"])
+    _app.include_router(router=group, prefix="/v1/group", tags=["group"])
 
     # 配置数据库
     register_tortoise(

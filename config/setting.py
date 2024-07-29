@@ -32,7 +32,7 @@ TORTOISE_ORM = {
 
 # 临时文件存储路径
 FILE_CONFIG = {
-    "path": "/Users/codedan/local/project/pycharmProjects/digital_portrait/file/"
+    "path": "/Users/codedan/local/project/pycharmProjects/ai-backend-cn/file/"
 }
 
 # 日志文件配置

@@ -8,6 +8,7 @@ from utils.logger_factory import logger
 from tortoise.contrib.fastapi import register_tortoise
 
 from web.file_group_manage_web import group
+from web.file_manage_web import file
 
 
 def create_app():
@@ -38,6 +39,7 @@ def create_app():
 
     # 添加路由
     _app.include_router(router=group, prefix="/v1/group", tags=["group"])
+    _app.include_router(router=file, prefix="/v1/file", tags=["file"])
 
     # 配置数据库
     register_tortoise(
@@ -52,4 +54,4 @@ def create_app():
 
 if __name__ == '__main__':
     app = create_app()
-    uvicorn.run(app, host=os.environ.get('SERVER_HOST', '0.0.0.0'), port=int(os.environ.get('SERVER_PORT', 8001)))
+    uvicorn.run(app, host=os.environ.get('SERVER_HOST', '0.0.0.0'), port=int(os.environ.get('SERVER_PORT', 8000)))

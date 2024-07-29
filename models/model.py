@@ -3,7 +3,8 @@ from tortoise import Model, fields
 
 class FileGroup(Model):
     id = fields.IntField(pk=True)
-    group_name = fields.CharField(max_length=255, null=True)
+    group_name = fields.CharField(max_length=255)
+    group_uuid = fields.CharField(max_length=255)
     create_time = fields.DatetimeField(auto_now_add=True)
 
     class Meta:

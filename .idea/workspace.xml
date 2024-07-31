@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91a5d4ea-24f7-44e3-a424-e9d9e76ab590" name="Changes" comment="文件组curd">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/file_manage_process.py" afterDir="false" />
+    <list default="true" id="91a5d4ea-24f7-44e3-a424-e9d9e76ab590" name="Changes" comment="文件上传，文件组文件列表预览">
+      <change afterPath="$PROJECT_DIR$/core/embedding_process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/document_spilt_actuator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/token_calculator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/embedding_web.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/setting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/file_group_manage_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/file_group_manage_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/file_manage_web.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/file_manage_web.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/file_manage_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/file_manage_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exception/custom_exception.py" beforeDir="false" afterPath="$PROJECT_DIR$/exception/custom_exception.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,27 +46,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.app.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.file_group_manage_web.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/codedan/local/project/pycharmProjects/ai-backend-cn/config&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.app.executor": "Debug",
+    "Python.file_group_manage_web.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "last_opened_file_path": "/Users/codedan/local/project/pycharmProjects/ai-backend-cn/utils",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/utils" />
+      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/exception" />
     </key>
   </component>
@@ -121,7 +120,8 @@
       <workItem from="1721742432897" duration="4382000" />
       <workItem from="1721828968588" duration="5680000" />
       <workItem from="1722147638653" duration="1359000" />
-      <workItem from="1722149463832" duration="6780000" />
+      <workItem from="1722149463832" duration="7846000" />
+      <workItem from="1722433186906" duration="4648000" />
     </task>
     <task id="LOCAL-00001" summary="第一次后端架构提交">
       <option name="closed" value="true" />
@@ -163,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721834332288</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="文件上传，文件组文件列表预览">
+      <option name="closed" value="true" />
+      <created>1722213330163</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722213330163</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +194,8 @@
     <MESSAGE value="修改后端数据库连接配置" />
     <MESSAGE value="修改后端数据库连接配置以及修改需求报告" />
     <MESSAGE value="文件组curd" />
-    <option name="LAST_COMMIT_MESSAGE" value="文件组curd" />
+    <MESSAGE value="文件上传，文件组文件列表预览" />
+    <option name="LAST_COMMIT_MESSAGE" value="文件上传，文件组文件列表预览" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ai_backend_cn$file_group_manage_web.coverage" NAME="file_group_manage_web Coverage Results" MODIFIED="1721830867356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />

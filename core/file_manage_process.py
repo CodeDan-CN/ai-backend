@@ -20,7 +20,7 @@ async def files_save(files: List[UploadFile], group_uuid: str, group_id: int) ->
     if not os.path.exists(directory_path):
         os.makedirs(directory_path)
         logger.info(f"Directory :'{directory_path}' created.")
-    input_file_url_list = []
+    file_infos = []
     file_record = []
     try:
         # 开始迭代进行文件的写入,并进行文件路径的临时存储
@@ -31,7 +31,7 @@ async def files_save(files: List[UploadFile], group_uuid: str, group_id: int) ->
             with open(input_file_url, "wb") as f:
                 for line in file.file:
                     f.write(line)
-            input_file_url_list.append(input_file_url)
+            file_infos.append({"file_name": name, "file_url": input_file_url})
             file_extension = name.split('.')[-1]
             file_record.append(FileRecord(file_name=name, file_type=file_extension, group_id=group_id))
     except Exception as e:
@@ -40,13 +40,13 @@ async def files_save(files: List[UploadFile], group_uuid: str, group_id: int) ->
         if os.path.exists(directory_path) and os.path.isdir(directory_path):
             # 删除整个文件夹及其所有内容
             shutil.rmtree(directory_path)
-        raise CustomErrorThrowException("10013", f"文件上传失败，原因是:{str(e)}")
+        raise CustomErrorThrowException(f"文件上传失败，原因是:{str(e)}")
     # 文件记录的插入
     await FileRecord.bulk_create(file_record)
-    return input_file_url_list
+    return file_infos
 
 
 async def get_list(group_id):
     """ 根据文件组id获取当前文件组下所属文件 """
     file_infos = await FileRecord.filter(group_id=group_id).all()
-    return [{"file_name":file_info.file_name,"file_type":file_info.file_type} for file_info in file_infos]
+    return [{"file_name": file_info.file_name, "file_type": file_info.file_type} for file_info in file_infos]

@@ -12,10 +12,9 @@ class BaseAPIException(HTTPException):
 
 class CustomErrorThrowException(BaseAPIException):
     """ 自定义异常 """
-    status_code = None
+    status_code = 999
     detail = None
 
-    def __init__(self, status_code: int, detail: str):
-        self.status_code = status_code
+    def __init__(self, detail: str):
         self.detail = detail
-        super().__init__(status_code=status_code, detail=detail)
+        super().__init__(status_code=self.status_code, detail=detail)

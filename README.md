@@ -12,10 +12,13 @@
 ## 后端详细需求分析
 1. 文件组管理（新增文件组，修改文件组，删除文件组，修改文件组）(☑️)
 2. 文件上传功能，文件组文件预览列表（☑️）
-3. 文件切割预览()
-4. embedding功能
-5. milvus向量数据库存入
-6. 构建RAG Chain（langchain 自定义retriever，构建带记忆体的v2版本rag）
+3. 文件切割预览(☑️)
+4. 嵌入模型管理功能(☑️)
+5. 模型配置管理功能（☑️）
+5. tiktoken预测分析(todo...)
+6. embedding功能(todo....)
+7. ilvus向量数据库存入(todo....)
+8. 构建RAG Chain（langchain 自定义retriever，构建带记忆体的v2版本rag）
 
 ## 前端详细需求分析
 1. 文件组管理页面，文件上传按钮
@@ -27,7 +30,8 @@
 1. 文件组数据字段（id,group_name,create_time）
 2. 文件上传记录表（id,file_name,file_type,group_id,create_time）
 3. milvus字段（id,pk,text,vector,group_id）
-
+4. 模型模版字段（id，type，name，alias）
+5. 嵌入模型实例参数字段（id，模型模版id，模型key，模型url）
 
 
 

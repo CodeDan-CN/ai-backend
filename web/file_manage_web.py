@@ -29,3 +29,5 @@ async def list(id: int) -> BaseResponse:
         msg="success",
         data=data
     )
+
+

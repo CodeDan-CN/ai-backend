@@ -4,15 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91a5d4ea-24f7-44e3-a424-e9d9e76ab590" name="Changes" comment="文件上传，文件组文件列表预览">
-      <change afterPath="$PROJECT_DIR$/core/embedding_process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/document_spilt_actuator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/token_calculator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/embedding_web.py" afterDir="false" />
+    <list default="true" id="91a5d4ea-24f7-44e3-a424-e9d9e76ab590" name="Changes" comment="代码上传---文件切割预览">
+      <change afterPath="$PROJECT_DIR$/core/embedding_model_process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/template_manage_process.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/request.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/embedding_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/embedding_model_factory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/rag_function.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/embedding_model_web.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/embedding_template_web.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ai-backend-cn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ai-backend-cn.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/file_group_manage_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/file_group_manage_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/file_manage_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/file_manage_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exception/custom_exception.py" beforeDir="false" afterPath="$PROJECT_DIR$/exception/custom_exception.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/embedding_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/embedding_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/file_manage_web.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/file_manage_web.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +59,7 @@
   "keyToString": {
     "Python.app.executor": "Debug",
     "Python.file_group_manage_web.executor": "Debug",
+    "Python.text.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
@@ -69,8 +79,11 @@
       <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/exception" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/file" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.app">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ai-backend-cn" />
       <option name="ENV_FILES" value="" />
@@ -94,9 +107,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="text" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ai-backend-cn" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/text.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.text" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +158,9 @@
       <workItem from="1721828968588" duration="5680000" />
       <workItem from="1722147638653" duration="1359000" />
       <workItem from="1722149463832" duration="7846000" />
-      <workItem from="1722433186906" duration="4648000" />
+      <workItem from="1722433186906" duration="5781000" />
+      <workItem from="1722585864284" duration="1720000" />
+      <workItem from="1722589054775" duration="19653000" />
     </task>
     <task id="LOCAL-00001" summary="第一次后端架构提交">
       <option name="closed" value="true" />
@@ -171,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722213330163</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="代码上传---文件切割预览">
+      <option name="closed" value="true" />
+      <created>1722437865867</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722437865867</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,10 +242,12 @@
     <MESSAGE value="修改后端数据库连接配置以及修改需求报告" />
     <MESSAGE value="文件组curd" />
     <MESSAGE value="文件上传，文件组文件列表预览" />
-    <option name="LAST_COMMIT_MESSAGE" value="文件上传，文件组文件列表预览" />
+    <MESSAGE value="代码上传---文件切割预览" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码上传---文件切割预览" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ai_backend_cn$file_group_manage_web.coverage" NAME="file_group_manage_web Coverage Results" MODIFIED="1721830867356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
-    <SUITE FILE_PATH="coverage/ai_backend_cn$app.coverage" NAME="app Coverage Results" MODIFIED="1722154902967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ai_backend_cn$text.coverage" NAME="text Coverage Results" MODIFIED="1722759539551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ai_backend_cn$app.coverage" NAME="app Coverage Results" MODIFIED="1722759550219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

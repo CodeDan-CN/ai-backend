@@ -4,24 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91a5d4ea-24f7-44e3-a424-e9d9e76ab590" name="Changes" comment="代码上传---文件切割预览">
-      <change afterPath="$PROJECT_DIR$/core/embedding_model_process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/template_manage_process.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/response.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/embedding_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/embedding_model_factory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/rag_function.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/embedding_model_web.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/embedding_template_web.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ai-backend-cn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ai-backend-cn.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="91a5d4ea-24f7-44e3-a424-e9d9e76ab590" name="Changes" comment="md文件---新增模型模版模块以及模型配置模块需求和设计">
+      <change afterPath="$PROJECT_DIR$/retriever/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retriever/custom_retriever.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/setting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/embedding_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/embedding_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/file_manage_web.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/file_manage_web.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/embedding_model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/embedding_model_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/file_manage_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/file_manage_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/template_manage_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/template_manage_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exception/all_exception.py" beforeDir="false" afterPath="$PROJECT_DIR$/exception/all_exception.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/embedding_model_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/logger_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/rag_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/rag_function.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,24 +50,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.app.executor": "Debug",
-    "Python.file_group_manage_web.executor": "Debug",
-    "Python.text.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
-    "last_opened_file_path": "/Users/codedan/local/project/pycharmProjects/ai-backend-cn/utils",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.app.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.file_group_manage_web.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.text.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/codedan/local/project/pycharmProjects/ai-backend-cn/utils&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/utils" />
@@ -160,7 +155,8 @@
       <workItem from="1722149463832" duration="7846000" />
       <workItem from="1722433186906" duration="5781000" />
       <workItem from="1722585864284" duration="1720000" />
-      <workItem from="1722589054775" duration="19653000" />
+      <workItem from="1722589054775" duration="20905000" />
+      <workItem from="1722862573307" duration="7126000" />
     </task>
     <task id="LOCAL-00001" summary="第一次后端架构提交">
       <option name="closed" value="true" />
@@ -218,7 +214,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722437865867</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="代码上传---模型模版模块以及模型配置模块">
+      <option name="closed" value="true" />
+      <created>1722787000870</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722787000870</updated>
+    </task>
+    <task id="LOCAL-00009" summary="md文件---新增模型模版模块以及模型配置模块需求和设计">
+      <option name="closed" value="true" />
+      <created>1722787019574</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722787019574</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +255,9 @@
     <MESSAGE value="文件组curd" />
     <MESSAGE value="文件上传，文件组文件列表预览" />
     <MESSAGE value="代码上传---文件切割预览" />
-    <option name="LAST_COMMIT_MESSAGE" value="代码上传---文件切割预览" />
+    <MESSAGE value="代码上传---模型模版模块以及模型配置模块" />
+    <MESSAGE value="md文件---新增模型模版模块以及模型配置模块需求和设计" />
+    <option name="LAST_COMMIT_MESSAGE" value="md文件---新增模型模版模块以及模型配置模块需求和设计" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ai_backend_cn$file_group_manage_web.coverage" NAME="file_group_manage_web Coverage Results" MODIFIED="1721830867356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />

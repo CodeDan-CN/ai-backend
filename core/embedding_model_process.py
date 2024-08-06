@@ -3,7 +3,7 @@ from tortoise.transactions import in_transaction
 from exception.custom_exception import CustomErrorThrowException
 from models.model import EmbeddingModelParameter
 from models.request import EmbeddingModelParameterRequest
-from utils.logger_factory import logger
+from utils.logger import logger
 
 
 async def add_embedding_model_info(param: EmbeddingModelParameterRequest):

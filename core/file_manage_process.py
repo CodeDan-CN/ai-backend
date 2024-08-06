@@ -5,7 +5,7 @@ from fastapi import UploadFile
 from config.setting import FILE_CONFIG
 from exception.custom_exception import CustomErrorThrowException
 from models.model import FileRecord
-from utils.logger_factory import logger
+from utils.logger import logger
 
 base_file_url = FILE_CONFIG["path"]
 

@@ -1,5 +1,5 @@
 from models.model import ModelTemplate
-from utils.logger_factory import logger
+from utils.logger import logger
 
 
 async def add_model_template(model_type: int, model_name: str, model_alias: str):

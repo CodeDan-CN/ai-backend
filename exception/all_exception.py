@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request
 from starlette.responses import JSONResponse
 from exception.custom_exception import BaseAPIException
-from utils.logger_factory import logger
+from utils.logger import logger
 
 exception = FastAPI()
 

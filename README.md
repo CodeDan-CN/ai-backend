@@ -16,8 +16,8 @@
 4. 嵌入模型管理功能(☑️)
 5. 模型配置管理功能（☑️）
 5. tiktoken预测分析(todo...)
-6. embedding功能(todo....)
-7. ilvus向量数据库存入(todo....)
+6. embedding功能(☑️)
+7. ilvus向量数据库存入(☑️)
 8. 构建RAG Chain（langchain 自定义retriever，构建带记忆体的v2版本rag）
 
 ## 前端详细需求分析

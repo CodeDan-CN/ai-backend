@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 from config.setting import TORTOISE_ORM
 from exception.all_exception import global_exception_handlers
-from utils.logger_factory import logger
+from utils.logger import logger
 from tortoise.contrib.fastapi import register_tortoise
 
 from web.file_group_manage_web import group

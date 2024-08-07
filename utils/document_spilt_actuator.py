@@ -16,7 +16,7 @@ class DocumentSplitActuatorFactory:
     services: Dict[str, AbstractDocumentSplitActuator] = {}
 
     @staticmethod
-    async def get_document_split(policy: str) -> AbstractDocumentSplitActuator:
+    def get_document_split(policy: str) -> AbstractDocumentSplitActuator:
         if policy not in DocumentSplitActuatorFactory.services:
             split_actuator = globals()[policy]()
             DocumentSplitActuatorFactory.services[policy] = split_actuator

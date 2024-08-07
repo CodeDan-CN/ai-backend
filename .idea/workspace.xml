@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91a5d4ea-24f7-44e3-a424-e9d9e76ab590" name="Changes" comment="md文件---新增模型模版模块以及模型配置模块需求和设计">
-      <change afterPath="$PROJECT_DIR$/retriever/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retriever/custom_retriever.py" afterDir="false" />
+    <list default="true" id="91a5d4ea-24f7-44e3-a424-e9d9e76ab590" name="Changes" comment="代码上传---embedding功能，milvus数据库存入">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/embedding_model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/embedding_model_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/file_manage_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/file_manage_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/template_manage_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/template_manage_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exception/all_exception.py" beforeDir="false" afterPath="$PROJECT_DIR$/exception/all_exception.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/embedding_model_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/factory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/logger_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/logger.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/embedding_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/embedding_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retriever/custom_retriever.py" beforeDir="false" afterPath="$PROJECT_DIR$/retriever/custom_retriever.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/document_spilt_actuator.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/document_spilt_actuator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/rag_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/rag_function.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +149,8 @@
       <workItem from="1722433186906" duration="5781000" />
       <workItem from="1722585864284" duration="1720000" />
       <workItem from="1722589054775" duration="20905000" />
-      <workItem from="1722862573307" duration="7126000" />
+      <workItem from="1722862573307" duration="7184000" />
+      <workItem from="1722952750306" duration="3244000" />
     </task>
     <task id="LOCAL-00001" summary="第一次后端架构提交">
       <option name="closed" value="true" />
@@ -230,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722787019574</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="代码上传---embedding功能，milvus数据库存入">
+      <option name="closed" value="true" />
+      <created>1722907254732</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1722907254732</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +259,8 @@
     <MESSAGE value="代码上传---文件切割预览" />
     <MESSAGE value="代码上传---模型模版模块以及模型配置模块" />
     <MESSAGE value="md文件---新增模型模版模块以及模型配置模块需求和设计" />
-    <option name="LAST_COMMIT_MESSAGE" value="md文件---新增模型模版模块以及模型配置模块需求和设计" />
+    <MESSAGE value="代码上传---embedding功能，milvus数据库存入" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码上传---embedding功能，milvus数据库存入" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ai_backend_cn$file_group_manage_web.coverage" NAME="file_group_manage_web Coverage Results" MODIFIED="1721830867356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
